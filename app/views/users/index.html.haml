@@ -1,0 +1,13 @@
+.container
+  %nav.navbar.navbar-expand-lg.navbar-light.bg-faded
+    .navbar-brand
+      %a.nav-link{"data-method" => "get", :href => "/"} e-Navigator
+    %button.navbar-toggler{"aria-controls" => "navbarNav", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarNav", "data-toggle" => "collapse", :type => "button"}
+      %span.navbar-toggler-icon
+    .collapse.navbar-collapse#navbarNav
+      %ul.navbar-nav
+        %li.nav-item
+          = link_to edit_user_path(id: current_user.id) do
+            %span
+              プロフィール
+  %h2 ユーザー一覧
