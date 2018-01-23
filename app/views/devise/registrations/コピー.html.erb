@@ -1,0 +1,42 @@
+<body>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-faded">
+        <div class:="" "navbar-brand"=""><a class="nav-link" data-method="get" href="/">e-Navigator</a> </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </nav>
+      <h2>ユーザー登録</h2>
+
+<form class="new_user" id="new_user" action="/users" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="dOyZP9K6s9tYeVfXVSh+DnK/6xHHZ0BO8j5/sJEkwRnaSetyZ4xugHDn2dGT5g7uhAEtU5OlHvgKvElrzkcxIw==">
+
+  <div class="field">
+    <strong><label for="user_email">Eメール</label></strong><br>
+    <input autofocus="autofocus" class="form-control" type="email" value="" name="user[email]" id="user_email">
+  </div>
+
+  <div class="field">
+    <strong><label for="user_password">パスワード</label></strong>
+    <em>(6 文字以上で入力してください)</em>
+    <br>
+    <input autocomplete="off" class="form-control" type="password" name="user[password]" id="user_password">
+  </div>
+
+  <div class="field">
+    <strong><label for="user_password_confirmation">パスワード（確認用）</label></strong><br>
+    <input autocomplete="off" class="form-control" type="password" name="user[password_confirmation]" id="user_password_confirmation">
+  </div>
+  <br>
+  <div class="actions">
+    <input type="submit" name="commit" value="登録" class="btn btn-primary" data-disable-with="登録">
+  </div>
+</form><br>
+  <a href="/users/sign_in">ログイン画面へ</a><br>
+
+
+
+
+    </div>
+
+
+</body>
