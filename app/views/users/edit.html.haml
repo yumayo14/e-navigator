@@ -12,7 +12,7 @@
             %span
               プロフィール
         %li.nav-item
-          = link_to destroy_user_session_path do
+          = link_to destroy_user_session_path, method: :delete do
             %span
               ログアウト
 
