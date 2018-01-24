@@ -50,3 +50,4 @@ gem 'devise'
 gem 'bootstrap-sass'
 gem 'haml-rails'
 gem 'erb2haml'
+gem "jquery-rails"
