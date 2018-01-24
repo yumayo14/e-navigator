@@ -2,10 +2,19 @@
   %nav.navbar.navbar-expand-lg.navbar-light.bg-faded
     .navbar-brand
       = link_to root_path do
-       e-Navigator
-    %button.navbar-toggler{"aria-controls" => "navbarNav", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarNav", "data-toggle" => "collapse", :type => "button"}
+        e-Navigator
+    %button.navbar-toggler{type: "button", data:{target: "navbarNav", toggle: "collapse"}}
       %span.navbar-toggler-icon
     #navbarNav.collapse.navbar-collapse
+      %ul.navbar-nav
+        %li.nav-item
+          = link_to edit_user_path(id: current_user.id) do
+            %span
+              プロフィール
+        %li.nav-item
+          = link_to destroy_user_session_path do
+            %span
+              ログアウト
 
   %h1 プロフィールページ
 
